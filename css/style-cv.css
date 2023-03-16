@@ -1,0 +1,267 @@
+/*Fuentes*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,200&family=Titillium+Web:wght@300;400;600;700&family=Yellowtail&display=swap');
+
+*{
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 20px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgb(0,0,0,0.1);
+}
+/**columna izquierda**/
+.container .col-izq{
+    position: relative;
+    background-color: rgb(64, 63, 63);
+    padding: 40px;
+
+}
+/**seccion perfil**/
+.perfil{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+.foto img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+/**seccion contacto**/
+.contacto{
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+.contacto h3{
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.contacto li{
+    list-style: none;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.contacto li .icono{
+    padding-right: 10px;
+}
+.contacto li .texto{
+    padding-left: 10px;
+}
+/**seccion habilidades**/
+.habilidades{
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+.habilidades h3{
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.habilidades div{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.habilidades p{
+    font-size: .8em;
+}
+.habilidades .cont-barra{
+    border: 1px solid white;
+    background-color: rgb(64, 63, 63);
+    height: 10px;
+    width: 250px;
+    display: grid;
+}
+.habilidades .barra-60{
+    background-color: white;
+    height: 10px;
+    width: 150px;
+    display: grid;
+}
+.habilidades .barra-40{
+    background-color: white;
+    height: 10px;
+    width: 100px;
+    display: grid;
+}
+.habilidades .barra-80{
+    background-color: white;
+    height: 10px;
+    width: 200px;
+    display: grid;
+}
+/**seccion idiomas**/
+.idiomas h3{
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.idiomas div{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.idiomas p{
+    font-size: .8em;
+}
+.idiomas .cont-barra{
+    border: 1px solid white;
+    background-color: rgb(64, 63, 63);
+    height: 10px;
+    width: 250px;
+    display: grid;
+}
+.idiomas .barra-95{
+    background-color: white;
+    height: 10px;
+    width: 237.5px;
+    display: grid;
+}
+.idiomas .barra-75{
+    background-color: white;
+    height: 10px;
+    width: 187.5px;
+    display: grid;
+}
+.idiomas .barra-60{
+    background-color: white;
+    height: 10px;
+    width: 150px;
+    display: grid;
+}
+.idiomas .barra-30{
+    background-color: white;
+    height: 10px;
+    width: 75px;
+    display: grid;
+}
+
+/**columna derecha**/
+.container .col-der{
+    position: relative;
+    background-color: white;
+    padding: 40px;
+}
+/**sobre mi**/
+.sobremi{ 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+.sobremi h1{
+    text-transform: uppercase;
+}
+.sobremi h3{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.sobremi p{
+    text-align: justify;
+}
+/**experiencia laboral**/
+.experiencia h3{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.contenedor-exp{
+    position: relative;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    border-bottom: 1px solid black;
+}
+.contenedor-exp > div{
+    padding-bottom: 10px;
+    font-size: .8em;
+}
+.contenedor-exp .titulo{
+    font-weight: bold;
+}
+.contenedor-exp .empresa{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/**Educacion**/
+.educacion h3{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.contenedor-edu{
+    position: relative;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    border-bottom: 1px solid black;
+}
+.contenedor-edu > div{
+    padding-bottom: 10px;
+    font-size: .8em;
+}
+.contenedor-edu .titulo{
+    font-weight: bold;
+}
+.contenedor-edu .materia{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/**intereses**/
+.intereses h3{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.contenedor-int{
+    position: relative;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.contenedor-int > div{
+    color: black;
+    font-size: 2em;
+    padding-left: 20px;
+}
+
+@media (max-width: 1000px){
+    .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
